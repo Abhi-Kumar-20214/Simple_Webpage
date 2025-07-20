@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main_container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            border: 5px solid black;
+            padding: 20px;
+        }
+        .sub_container {
+            width: 100%;
+            background-color: #7BD9F6;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .head , h1{
+            display: flex;
+            justify-content: center;
+        }
+        .one img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 50%;
+            border: 1px solid green;
+        }
+        .two {
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        img:hover{
+            font-weight: bold;
+            color: green;
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .two {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        
+        <div class="sub_container">
+            <!-- Section 1 -->
+            <section class="head">
+                <div class="one">
+                    <img src="Abhishek.jpg" alt="">
+                </div>
+            </section><br>
+
+
+            <h1>Abhishek Vishwakarma</h1>
+
+            <!-- Section 2 -->
+            <section class="foot">
+                <div class="two">
+                <p>
+                    “Hello, My name is Abhishek Vishwakarma, and I’m currently pursuing a B.Tech in Computer Science & Engineering from Rameshwaram Institute of Technology & Management,Lucknow.
+                    I have a strong interest in full-stack web development, with hands-on experience in the MERN stack—MongoDB, Express.js, React.js, and Node.js.
+                    I’ve worked as an intern with the ERA Foundation under the Kalam Pragati Initiative, where I contributed to youth engagement and innovation projects. I’m also part of Apna College’s training program, where I build responsive web applications and RESTful APIs.
+                    Beyond technical skills, I’ve participated in hackathons like Codathon 2025 and attended workshops, including one on Artificial Intelligence at IIT Kanpur.
+                    I’m a quick learner, passionate about solving real-world problems using technology, and always eager to collaborate on impactful tech-driven initiatives. Thank you!”
+                </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
